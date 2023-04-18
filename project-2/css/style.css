@@ -1,0 +1,286 @@
+/* css Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* css variable */
+/* :root{
+    --var-color: black;
+} */
+
+#navigation{
+display: flex;
+align-items: center;
+top: 0;
+position: sticky;
+}
+#navigation::before{ 
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+
+} */
+
+/* logo and images */
+.logo{
+    margin: 5px 35px;
+    }
+.navbar img{
+    height: 75px;
+    width: 75px;
+    margin: 12px 20px;
+    border-radius: 70px;
+    cursor: pointer;
+}
+/* list styling */
+
+ul{
+    display: flex;
+}
+.navbar ul li{
+    list-style: none;
+}
+.navbar li a{
+    color: white;
+    display: block;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 12px 20px;
+    cursor: pointer;
+}
+.navbar li a:hover{
+    color: white;
+    background-color: rgb(111, 110, 110);
+    border-radius: 18px;
+}
+.navbar li a:active{
+    background-color: rgb(82, 78, 78);
+}
+
+/* Home section */
+#home{
+    color: rgb(183, 100, 73);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 200px;
+    height: 620px;
+}
+#home::before{ 
+    content: "";
+    position: absolute;
+    background:url("img/upwk61661577-wikimedia-image-kowapeej.jpg") no-repeat center center/cover;
+    border-bottom-right-radius: 350px;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+#home h1{
+    font-size: 3.5rem; 
+}
+#home p{
+     font-size: 1.5rem;
+     color: white;
+}
+
+/* about us section */
+#about{
+    margin-top: 18px;
+}
+/* #about::before{
+    content: "";
+    position: absolute;
+    background: url("img/pretty-waitress-serving-group-friends-with-food-restaurant_52137-34105.avif");
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.6;
+} */
+
+#about .abt-detail{
+    display: flex;
+    padding: 16px;
+}
+#about p{
+/* border: 2px solid red; */
+margin-top: 45px;
+height: 160px;
+width: 600px;
+font-size: 19px;
+text-align: justify;
+margin-left: 90px;
+}
+#about img{
+    height: 500px;
+    width: 650px;
+    margin-left: 35px;
+    border-radius: 20px;
+    /* border: 2px solid red; */
+    margin-bottom: 18px;
+}
+
+/* serviices section */
+#service{
+    margin: 14px;
+    display: flex;
+}
+#service .box p{
+    font-size: 18px;
+    text-align: center;
+}
+
+#service .box{
+    /* border: 2px solid brown; */
+    border-radius: 20px;
+    box-shadow: 4px 5px 10px rgb(220, 120, 120);
+    padding: 16px;
+    margin: 5px 10px; 
+    background-color: rgb(235, 224, 226);
+    margin-bottom: 23px;
+}
+#service .box img{
+    display: block;
+    margin: auto;
+    height: 150px;
+    width: 200px;
+}
+
+/* chefs detail section */
+#chef{
+    display: flex;
+    margin: 20px;
+}
+#chef .box1 img{
+    display: block;
+    margin: auto;
+    height: 500px;
+    width: 450px;
+    border-radius: 16px;
+}
+#chef .box1 p{
+    font-size: 18px;
+    text-align: center;
+}
+#chef .box1{
+    /* border: 2px solid red; */
+    border-radius: 16px;
+    width: 450px;
+    padding: 12px;
+    margin: 4px 5px; 
+    margin-bottom: 15px;
+    background-color: rgb(235, 224, 226);
+    box-shadow: 4px 6px 8px rgb(220, 120, 120);
+}
+
+/* client section */
+#client-section{
+height: 320px;
+position: relative;
+}
+.clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    }
+.client-items{
+    padding: 34px;
+    }
+.clients img{
+    height: 150px;
+    width: 220px;
+}
+
+    /* contact section */
+#contact{
+position: relative;
+}
+#contact::before{
+content: "";
+background: url("img/contact.jpg");
+
+position: absolute;
+height: 100%;
+width: 100%;
+z-index: -1;
+opacity: 0.5;
+}
+#contact-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 18px;
+    border:2px solid white;
+}
+#contact-box form{
+    width: 400px;
+}
+#contact-box label{
+    font-size: 1.1rem;
+}
+
+/* footer section */
+footer{
+    background-color: rgb(196, 184, 184);
+    color: white;
+    padding: 10px 17px;
+}
+.follow img{
+    height: 30px;
+    width: 30px;
+    padding: 4px;
+}
+.follow ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.follow li{
+    list-style: none;
+}
+
+/* utility classes */
+.h-primary{
+    font-size: 2.5rem;
+    padding: 12px;
+}
+
+.h-secondary{
+    font-size: 1.5rem;
+    padding: 12px;
+}
+
+.btn{
+    background-color: rgb(183, 100, 73);
+    color: white;
+    border: none;
+    padding: 8px 10px;
+    margin: 20px;
+    font-size: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+}
